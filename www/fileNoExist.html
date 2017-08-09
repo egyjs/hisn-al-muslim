@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>nativeDroid II - jQueryMobile Template</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="vendor/jquery/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="vendor/jquery/jquery.mobile.min.rtl.css" />
+		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" href="css/nativedroid2.css" />
+		<link rel="stylesheet" href="css/ND2rtl.css" />
+		<link rel="stylesheet" href="css/index.css" />
+
+				<style>
+					/* Prevent FOUC */
+					body { opacity: 0; }
+				</style>
+        <style>
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+</style>
+        <script>
+        
+function exitFromApp(){
+    if (navigator.app) {
+        navigator.app.exitApp();
+    } else if (navigator.device) {
+        navigator.device.exitApp();
+    } else {
+        window.close();
+    }
+}
+        </script>
+
+	</head>
+	<body>
+
+		<div data-role="page"> 
+
+<div style="text-align: center" id="popupDialog">
+
+                <div data-role="header">
+                	<h3 style="text-align: right" class='nd-title'>يجب تحميل بعض ملفات التطبيق اولا</h3>
+            	</div>
+
+                <div data-role="content">
+                    <code id="status">0%</code><br>
+                    <progress id="ft-prog" style="width: 95%;background: #fff;height: 35px;" value="0" max="100"></progress>
+                    <br>
+<a href="#" onclick="getAllDB();" class="ui-btn ui-btn-inline  ui-btn-raised clr-primary waves-effect waves-button waves-effect waves-button">
+    تحميل</a> 
+<a href="#"  onclick="exitFromApp();" class="ui-btn ui-btn-inline  ui-btn-raised clr-primary waves-effect waves-button waves-effect waves-button">
+    ليس الان</a>
+
+                </div>
+</div>
+
+
+			</div>
+
+
+		<script src="vendor/jquery/jquery-2.1.4.min.js"></script>
+		<script src="cordova.js"></script>
+        <script src="js/ads.js"></script>
+		<script src="vendor/jquery/jquery-ui.min.js"></script>
+		<script src="vendor/jquery/jquery.mobile.min.js"></script>
+		<script src="vendor/waves/waves.min.js"></script>
+		<script src="vendor/wow/wow.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+		<script src="nd2settings.js"></script>
+		<script src="js/index.js"></script>
+
+	</body>
+</html>

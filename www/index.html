@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>nativeDroid II - jQueryMobile Template</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="vendor/jquery/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="vendor/jquery/jquery.mobile.min.rtl.css" />
+		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" href="css/nativedroid2.css" />
+		<link rel="stylesheet" href="css/ND2rtl.css" />
+		<link rel="stylesheet" href="css/index.css" />
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <style>
+        progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+        </style>
+        				<style>
+					/* Prevent FOUC */
+					body { opacity: 0; }
+				</style>
+	</head>
+	<body onclick="showBannerFunc();">
+		<div data-role="page" id="pagelist">
+			<!--nd2-include data-src="pages/fragments/panel.left.html"></nd2-include-->
+            <a style="display: none;" id="popupDialogBtn" href="#popupDialog" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="pop"></a>
+            <nd2-include data-src="pages/fragments/dialog.html"></nd2-include>
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="pages/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
+				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn ui-disabled" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>حصن المسلم</h1>
+			</div>
+
+			<div role="main" class="ui-content" data-inset="false">
+                <ul id="ar" data-role="listview" data-icon="false" data-autodividers="true" >
+
+                </ul>
+			</div>
+
+
+		</div>
+        <div data-role="page" id="display">
+            <div  data-role="header"  data-position="fixed">
+                 <h1 id="htitle" class="wow fadeIn" data-wow-delay='0.4s'>حصن المسلم</h1>
+            <a data-role="button" data-rel="back" data-transition="slide" data-direction="reverse">
+                <i class="zmdi zmdi-arrow-left"></i></a>
+
+            </div>
+            <div data-role="content">
+                <div id="definition" dir="rtl">
+                  جار التحميل...
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div class="row center-xs">
+                    <div class="col-xs-12">
+                        <div class="box">
+                            <div id="img100" >
+                                <p style="width: 90%;" class="ui-btn ui-btn-raised clr-warning waves-effect waves-button waves-effect waves-button">
+                                      تشغيل الصوت   
+                                    <i class="zmdi zmdi-play">     </i>
+                                </p>
+                            </div>
+                            <audio id="audio100" controls  style="width: 100%;">
+                              <source src="" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+		<script src="vendor/jquery/jquery-2.1.4.min.js"></script>
+		<script src="cordova.js"></script>
+        <script src="js/ads.js"></script>
+		<script src="vendor/jquery/jquery-ui.min.js"></script>
+		<script src="vendor/jquery/jquery.mobile.min.js"></script>
+		<script src="vendor/waves/waves.min.js"></script>
+		<script src="vendor/wow/wow.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+		<script src="nd2settings.js"></script>
+		<script src="js/index.js"></script>
+<script>
+
+        </script>
+	</body>
+</html>

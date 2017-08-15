@@ -22,7 +22,7 @@ function fileDoesNotExist(){
         console.log("getAllDB: start");
 var fileTransfer = new FileTransfer();
     
-var uri = encodeURI("https://github.com/el3zahaby/hisn-al-muslim/raw/master/ar.zip");
+var uri = encodeURI("https://github.com/GeneralEG/hisn-al-muslim/raw/master/ar.zip");
   fileTransfer.download(
     uri,
     cordova.file.externalApplicationStorageDirectory+ uri.substring(uri.lastIndexOf('/')+1),
